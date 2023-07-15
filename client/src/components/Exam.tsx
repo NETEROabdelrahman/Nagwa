@@ -13,7 +13,6 @@ const Exam = () => {
     const [data, setData] = useState<words[] | null>(null)
     const [selectedOption, setSelectedOption] = useState<string>('')
     const [wordIndex, setWordIndex] = useState<number>(0)
-    //const [choices, setChoices] = useState<string[]>([])
     const [correctAnswers, setCorrectAnswers] = useState<number>(0)
     const [finalScore, setFinalScore] = useState<boolean | null>(null)
     const [rank, setRank] = useState<theRank | null>(null)
@@ -48,7 +47,6 @@ const Exam = () => {
             alertWarning()
         } else {
             if (data && wordIndex < data.length) setWordIndex(prev => prev + 1)
-            //setChoices([...choices, selectedOption])
             setSelectedOption('');
             if (data) {
                 if (selectedOption === data[wordIndex].pos) {
