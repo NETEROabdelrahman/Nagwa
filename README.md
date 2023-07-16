@@ -5,7 +5,7 @@
 
 ## follow these steps:
 
-- clone the repository
+- clone this repository
 
 `git clone https://github.com/NETEROabdelrahman/Nagwa.git`
 
